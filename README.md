@@ -1,7 +1,5 @@
 # 3D_hESC_2023
 ## For NADs:
-  LAD.slurm.sh -> Call_LAD -> LAD.epic2.slurm.sh
+  Raw fastq files -> split.sh -> R1/R2 fastq files -> LAD.slurm.sh -> bam files -> visual.slurm.sh -> bw files -> analyze.py -> NADs (bed files) 
 ## For NADs:
-  NAD.slurm.sh -> Call_NAD -> NAD.epic2.slurm.sh
-## For enrichment analysis: 
-  analyze_RE_enrichment.py
+  Raw fastq files -> NAD.slurm.sh -> bw files -> analyze.py -> LADs (bed files)
